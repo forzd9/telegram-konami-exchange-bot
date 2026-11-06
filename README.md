@@ -59,3 +59,7 @@
 ## التحقق
 
 هذه الوثيقة مبنية على قراءة الملفات فقط. لم يُشغّل البرنامج أو الاختبارات، ولم تُثبت أي اعتماديات؛ لذلك لا يوجد ادعاء بنجاح البناء أو التثبيت أو التشغيل.
+
+## Secure configuration
+
+Copy `.env.example` to `.env` locally and fill in the required values. The application now requires `BOT_TOKEN`, `EMAIL_ADDRESS`, and `EMAIL_PASSWORD` through environment variables and fails safely when they are missing. Never commit `.env`, session files, private keys, or real credentials.
